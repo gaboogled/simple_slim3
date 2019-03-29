@@ -1,4 +1,0 @@
-vendor/
-logs/*
-.env
-composer.lock
