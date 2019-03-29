@@ -18,11 +18,13 @@ The main idea is to utilize a specific set of Composer Packages compatible with 
 
 ## Install Slim 3 MVC Application
 
->**WARNING:** This is a Composer, Skeleton Application. Installation will overwrite existing composer.json files if run within an existing Slim 3 folder.
+>**WARNING:** This is a Composer Skeleton Application. Installation will overwrite existing composer.json files if run within an existing Slim 3 folder.
 
-To get started, simply run this command from the directory in which you want to install your new Slim Framework application, usually the root of your web server.
+To get started, simply
 
- composer gaboogled/slim3mvc
+Then run this command from the directory in which you want to install your new Slim 3 Framework MVC application. (usually the root of your web server)
+
+ composer install
 
 Next, you'll want to:
 
