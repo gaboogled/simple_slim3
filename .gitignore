@@ -1,7 +1,10 @@
-# Folders #
+# Custom #
 ###################
 vendor/
 _srcHTML/
+_site
+.sass-cache
+.jekyll-metadata
 
 # Compiled source #
 ###################
