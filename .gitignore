@@ -1,0 +1,4 @@
+# Untracked Files and Directories:
+\vendor!/
+     \composer.lock
+     \!/.DS_Store!
