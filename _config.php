@@ -1,8 +1,8 @@
 <?php
-require 'vendor/autoload.php';
-session_start();
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ResponseInterface as Response;
 
-date_default_timezone_set('America/Arizona');
+require 'vendor/autoload.php';
 
 $config = [
     'settings' => [
@@ -13,9 +13,27 @@ $config = [
             'level' => Monolog\Logger::DEBUG,
             'path' => __DIR__ . '/logs/slim3mvc.log',
         ],
-    ],
+
+        // View settings
+        'view' => [
+            'template_path' => __DIR__ . '/../mvc/_templates',
+            'twig' => [
+                'cache' => __DIR__ . '/../_cache/twig',
+                'debug' => true,
+                'auto_reload' => true,
+        ],
+
+        // Database connection settings
+        "db" => [
+            "host" => "localhost",
+            "dbname" => "slim3mvc",
+            "user" => "root",
+            "pass" => "root"
+        ]
+     ]
+   ]
 ];
+
 $app = new \Slim\App($config);
 
-// All file paths relative to root
-chdir(dirname(__DIR__));
+date_default_timezone_set('America/Arizona');

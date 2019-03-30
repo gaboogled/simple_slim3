@@ -1,4 +1,5 @@
 <?php
+
 return [
     'settings' => [
         // Slim Settings
@@ -18,12 +19,5 @@ return [
             'name' => 'app',
             'path' => __DIR__ . '/../logs/slim3mvc.log',
         ],
-    ],
-        // Database connection settings
-        "db" => [
-            "host" => "localhost",
-            "dbname" => "slim3mvc",
-            "user" => "root",
-            "pass" => "root"
-        ],
-];
+    ]
+  ];

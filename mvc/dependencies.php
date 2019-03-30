@@ -1,22 +1,22 @@
 <?php
-// DI Configurations based on shameerc/slim3-aura-di
 
-
-// DIC configuration
+// DI Configurations  (shameerc/slim3-aura-di)
+// Get container
 $container = $app->getContainer();
+
+if (PHP_SAPI == 'cli-server') {
+    // To help the built-in PHP dev server, check if the request was actually for
+    // something which should probably be served as a static file
+    $url  = parse_url($_SERVER['REQUEST_URI']);
+    $file = __DIR__ . $url['path'];
+    if (is_file($file)) {
+        return false;
+    }
+}
+
 // -----------------------------------------------------------------------------
 // Service providers
 // -----------------------------------------------------------------------------
-
-// PDO database library
-$container['db'] = function ($c) {
-    $settings = $c->get('settings')['db'];
-    $pdo = new PDO("mysql:host=" . $settings['host'] . ";dbname=" . $settings['dbname'],
-        $settings['user'], $settings['pass']);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    return $pdo;
-};
 
 /* Twig
 $container['view'] = function ($c) {
