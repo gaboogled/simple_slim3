@@ -22,7 +22,8 @@
         "monolog/monolog": "^1.17",
         "dopesong/slim-whoops": "^2",
         "slim/php-view": "^2.2",
-        "projek-xyz/slim-plates": "^0.2.2"
+        "projek-xyz/slim-plates": "^0.2.2",
+        "catfan/medoo": "^1.6"
     },
     "require-dev": {
         "pavlakis/slim-behat-extension": "^1.0",
