@@ -28,8 +28,8 @@ Then run this command from the directory in which you want to install your new S
 
 Next, you'll want to:
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+* Point your virtual host document root to your new application's `/public` directory.
+* Ensure `/logs` is web writeable. (chmod -R 755 logs)
 #horizontal-rule
 
 

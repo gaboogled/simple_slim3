@@ -1,10 +1,11 @@
 # Custom #
 ###################
-vendor/
+vendor/*
 _srcHTML/
 _site
 .sass-cache
 .jekyll-metadata
+info.php
 
 # Compiled source #
 ###################
