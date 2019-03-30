@@ -1,3 +1,5 @@
+// This file starts the slim3mvc Application
+
 <?php
 /* Require Composer autoloader. Initialize Slim with error display set TRUE. */
 session_start();
@@ -13,7 +15,7 @@ $mvc = new \Slim\App([
 ]);
 
 // Instantiate the MVC Application
-$config = require __DIR__ . '/../mvc/config_my_mvc.php';
+$config = require __DIR__ . '/../slim3mvc_config.php';
 $mvc = new \Slim\App($config);
 
 // Register Slim 3 Dependencies
