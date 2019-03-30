@@ -3,11 +3,8 @@
 
 require 'config.php';
 
-include 'controller.php';
-
-
-
-
+require 'controller.php';
+require 'router.php';
 
 // Run app
 $app->run();

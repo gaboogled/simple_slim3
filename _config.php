@@ -1,9 +1,8 @@
 <?php
-
-
+require 'vendor/autoload.php';
+session_start();
 
 date_default_timezone_set('America/Arizona');
-
 
 $config = [
     'settings' => [
@@ -17,3 +16,6 @@ $config = [
     ],
 ];
 $app = new \Slim\App($config);
+
+// All file paths relative to root
+chdir(dirname(__DIR__));

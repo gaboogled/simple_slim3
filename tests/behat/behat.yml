@@ -1,0 +1,12 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+
+  extensions:
+    Pavlakis\Slim\Behat:
+      config_file: tests/config.php
+      dependencies_file: ../../mvc/dependencies.php
+      middleware_file: ../../mvc/middleware.php
+      routes_file: ../../mvc/routes.php

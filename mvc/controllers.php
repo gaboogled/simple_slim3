@@ -12,6 +12,7 @@ if (PHP_SAPI == 'cli-server') {
     }
 }
 
+// Get container
 namespace MVC\Controllers;
 class mvcController
 {
@@ -21,10 +22,7 @@ class mvcController
    }
  }
 
- // Get container
- $container = $app->getContainer();
-
  // Register component on container
  $container['view'] = function ($container) {
-     return new \Slim\Views\PhpRenderer('./mvc/views/_templates/');
+     return new \Slim\Views\PhpRenderer('./views/_templates/');
  };
