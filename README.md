@@ -1,4 +1,4 @@
-# Slim 3 MVC Framework Skeleton Application
+# simple MVC for Slim 3 micro-framework.
 
 ## Summary
 _______________________________________________________________________________
@@ -14,7 +14,7 @@ The slim3mvc Skeleton is a Slim 3 Skeleton Application based on the Model-View-C
 The goal is to aid in the early stages of the development process by leveraging Slim 3's lightweight footprint while empowering reusability approaches that better support the separation of logic from business, functional, and presentation dependencies using modular and reusable components.
 
 The main idea is to utilize a specific set of Composer Packages compatible with the Slim 3 micro-Framework to construct an MVC structured development workflow consisting of requirements, modeled as components or widgets, that are then selected from a policy-based library to support business needs.
-#horizontal-rule
+_______________________________________________________________________________
 
 ## Install Slim 3 MVC Application
 
@@ -30,7 +30,7 @@ Next, you'll want to:
 
 * Point your virtual host document root to your new application's `/public` directory.
 * Ensure `/logs` is web writeable. (chmod -R 755 logs)
-#horizontal-rule
+_______________________________________________________________________________
 
 
 >**Minimum Requirements and Composer Packages**

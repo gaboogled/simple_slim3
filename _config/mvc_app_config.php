@@ -4,6 +4,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 
 require 'vendor/autoload.php';
 
+date_default_timezone_set('America/Arizona');
 $config = [
     'settings' => [
         'displayErrorDetails' => true,
@@ -35,5 +36,3 @@ $config = [
 ];
 
 $app = new \Slim\App($config);
-
-date_default_timezone_set('America/Arizona');

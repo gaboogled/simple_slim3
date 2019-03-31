@@ -2,6 +2,7 @@
 // Application middleware
 // e.g: $app->add(new \Slim\Csrf\Guard);
 
+
 // PDO database library
 $container['db'] = function ($c) {
     $settings = $c->get('settings')['db'];
