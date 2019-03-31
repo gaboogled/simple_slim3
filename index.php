@@ -4,11 +4,12 @@
  *
  * @link      https://github.com/gaboogled/simple
  * @copyright Copyright (c) 2019 George Freeney-Jones
- * @license   https://github.com/gaboogled/simple/blob/master/LICENSE/ (MIT License)
+ * @license   (MIT License) https://github.com/gaboogled/simple/blob/master/LICENSE/
  */
 
-
-/* Slim 3 is the Core Application. This is the entry point and a simple MVC Base layer to the simple home page (_templates/index.html). */
+//  Slim 3 is the Core Application.
+//  This is the entry point and a simple MVC Base layer to the simple home page
+//  (_templates/index.html).
 
 require '_config/mvc_app_config.php'; // Defalt simple Application settings.
 //------- Nothing below this. Apps will connect in BaseRouter.php ------------//
