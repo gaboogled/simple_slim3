@@ -4,6 +4,7 @@
 *
 * @link      https://github.com/gaboogled/simple
 * @copyright Copyright (c) 2019 George Freeney-Jones
-* @license   (MIT License) https://github.com/gaboogled/simple/blob/master/LICENSE/
+* @license   (MIT License)
+* https://github.com/gaboogled/simple/blob/master/LICENSE/
 */
-// Purpose: simple Base (global) Test. Check test folder unique test cases.
+// Purpose: simple Base (global) Models. Check applications folder individual app Models.
